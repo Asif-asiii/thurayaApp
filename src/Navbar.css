@@ -1,0 +1,131 @@
+/* Navbar.css */
+
+/* Main Section Styling */
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbarMainSection {
+  background-color: rgba(0,128,128) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px 0;
+}
+
+/* Navbar Styling */
+.navbar1 {
+  background: transparent !important;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  border: none;
+  margin-left: 50px;
+}
+
+.navbar1a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Styling */
+.logo_image img {
+  width: 100%;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.logo_image img:hover {
+  transform: scale(1.05);
+}
+
+/* Link Styling */
+.navbar1b {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.linksOfNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+/* .navbar1b{
+  margin-left: 600px;
+} */
+.links:hover {
+  color: #ffdd57;
+}
+
+/* Hamburger Menu Styling */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+}
+
+.hamberger {
+  color: white;
+}
+
+/* Language Icon Styling */
+.languageicon {
+  font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar1b {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar1b.show {
+    display: block;
+  }
+
+  .linksOfNav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #responsive-navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+    background-color: rgba(0,128,128) !important;
+    position: relative;
+    top: 110px;
+    width: 200px;
+    padding: 15px 0;
+  }
+}
+
+/* Transition Effects */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.links,
+.logo_image img {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .linksOfNav {
+    flex-direction: column;
+  }
+}
